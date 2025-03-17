@@ -1,7 +1,6 @@
-package br.com.microservices.orchestrated.orchestratorservice.core.dto;
+package br.com.microservices.orchestrated.productvalidationservice.core.dto;
 
-import br.com.microservices.orchestrated.orchestratorservice.core.enums.EEventSource;
-import br.com.microservices.orchestrated.orchestratorservice.core.enums.ESagaStatus;
+import br.com.microservices.orchestrated.productvalidationservice.core.enums.ESagaStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,7 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class History {
 
-    private EEventSource source;
+    private String source;
     private ESagaStatus status;
     private String message;
     private LocalDateTime createdAt;
